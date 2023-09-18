@@ -1,0 +1,22 @@
+import { conectaApi } from "./conectaApi.js";
+
+const formulario = document.querySelector("[data-formulario]");
+
+async function criaCard(evento) {
+  evento.preventDefault();
+
+  const categoria = document.querySelector("[data-categoria]").value;
+  const data = document.querySelector("[data-data]").value;
+  const descricao = document.querySelector("[data-descricao]").value;
+  const valor = document.querySelector("[data-valor]").value;
+  const conta = document.querySelector("[data-conta]").value;
+
+  try {
+    await conectaApi.criaValorConta(categoria, data, descricao, valor, conta);
+    window.location.href = "./dashboard.html";
+  } catch (e) {
+    alert(e);
+  }
+}
+
+formulario.addEventListener("submit", evento => criaCard(evento));

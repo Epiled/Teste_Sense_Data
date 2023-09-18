@@ -1,0 +1,73 @@
+{
+  "users": [
+    {
+      "id": 1,
+      "nome": "Marcia",
+      "email": "marica@contato.com",
+      "senha": "senhaMarcia",
+      "idGastos": 1
+    },
+    {
+      "id": 2,
+      "nome": "Calebe",
+      "email": "Calebe@contato.com",
+      "senha": "calebe123",
+      "idGastos": 2
+    },
+    {
+      "id": 3,
+      "nome": "Felipe",
+      "email": "felipe@contato.com",
+      "senha": "senhaFelipe*",
+      "idGastos": 3
+    }
+  ],
+  "gastos": [
+    {
+      "id": 1
+    },
+    {
+      "id": 2,
+      "categoria": "Saúde",
+      "data": "05/01/2022",
+      "descricao": "Non molestiae reiciendis ut facilis debitis id Quis iste qui eaque molestiae eum aliquam dolorum quo officia illo.",
+      "valor": 500,
+      "idConta": 1
+    },
+    {
+      "categoria": "Lazer",
+      "data": "05/11/2020",
+      "descricao": "Non molestiae reiciendis ut facilis debitis id Quis iste qui eaque molestiae eum aliquam dolorum quo officia illo.",
+      "idConta": 1,
+      "valor": 7700,
+      "id": 3
+    },
+    {
+      "id": 4
+    },
+    {
+      "categoria": "Pamonha",
+      "data": "07/09/2023",
+      "descricao": "Muito Boa",
+      "idConta": 1,
+      "valor": 12,
+      "id": 5
+    },
+    {
+      "categoria": "Saúde",
+      "data": "2023-09-14",
+      "descricao": "Olá Mundo",
+      "valor": null,
+      "idConta": 1,
+      "id": 6
+    },
+    {
+      "categoria": "Pão",
+      "data": "",
+      "descricao": "Olá Mundo",
+      "valor": 8000,
+      "idConta": 1,
+      "id": 7
+    }
+  ]
+}

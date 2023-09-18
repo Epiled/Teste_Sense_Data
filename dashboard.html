@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="./src/css/reset.css">
+  <link rel="stylesheet" href="./src/css/base.css">
+  <link rel="stylesheet" href="./src/css/corpo.css">
+  <link rel="stylesheet" href="./src/css/dashboard.css">
+  <link rel="stylesheet" href="./src/css/cabecalho.css">
+  <link rel="stylesheet" href="./src/css/filtro.css">
+  <link rel="stylesheet" href="./src/css/card.css">
+</head>
+
+<body class="corpo dashboard">
+  <header class="cabecalho">
+    <div class="cabecalho__topo">
+      <span class="cabecalho__user">Felipe</span>
+      <div class="cabecalho__funcoes">
+        <div class="cabecalho__buscador">
+          <input class="cabecalho__ipt" type="search" placeholder="Busqe por Categoria">
+          <button class="cabecalho__btn">Buscar</button>
+        </div>
+        <a class="cabecalho__btn cabecalho__btn--adicionar" href="adicionarConta.html">Adicona Conta</a>
+      </div>
+    </div>
+    <div class="filtro">
+      <span class="filtro__txt">Filtro:</span>
+      <fieldset class="filtro__set">
+        <label class="filtro__categoria" for="categorias">
+          Categorias:
+        </label>
+        <select class="filtro__categorias" data-filtro-categorias name="categorias" id="categorias">
+          <option value="Saúde">Saúde</option>
+          <option value="Comida">Comida</option>
+          <option value="Lazer">Lazer</option>
+          <option value="Mercado">Mercado</option>
+          <option value="Transporte">Transporte</option>
+          <option value="Transporte">Todos</option>
+        </select>
+      </fieldset>
+
+    </div>
+  </header>
+  <main data-cards-lista class="dashboard__principal">
+  </main>
+  <script src="./src/app/mostraCards.js" type="module"></script>
+  <!-- <script src="./src/app/filtrarCategorias.js"></script> -->
+</body>
+
+</html>

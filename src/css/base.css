@@ -1,0 +1,27 @@
+:root {
+  --cor-principal: #0042a9;
+  --cor-principal-60: rgb(72 228 255 / 60%);
+  --cor-principal-escura: rgb(2 24 47);
+  --branco-50: rgb(255, 255, 255, .5);
+  --branco: #fff;
+  --preto: #000;
+
+  --cor-concluir: #127003;
+  --cor-excluir: #DE1306;
+
+  --sombra: rgba(0, 0, 0, .25);
+  --sombra-15: rgba(0, 0, 0, .15);
+
+  font-size: 62.5%;
+  font-family: 'Inter', sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+  line-height: normal;
+}
+
+img {
+  width: 100%;
+  height: auto;
+}
