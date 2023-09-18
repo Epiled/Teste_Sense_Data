@@ -24,7 +24,12 @@
   ],
   "gastos": [
     {
-      "id": 1
+      "id": 1,
+      "categoria": "Saúde",
+      "data": "05/01/2022",
+      "descricao": "Non molestiae reiciendis ut facilis debitis id Quis iste qui eaque molestiae eum aliquam dolorum quo officia illo.",
+      "valor": 500,
+      "idConta": 2
     },
     {
       "id": 2,
@@ -43,31 +48,52 @@
       "id": 3
     },
     {
-      "id": 4
+      "id": 4,
+      "categoria": "Transporte",
+      "data": "07/09/2023",
+      "descricao": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eget ligula eu lectus lobortis condimentum.",
+      "idConta": 1,
+      "valor": 12
     },
     {
-      "categoria": "Pamonha",
+      "categoria": "Transporte",
       "data": "07/09/2023",
-      "descricao": "Muito Boa",
+      "descricao": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eget ligula eu lectus lobortis condimentum.",
       "idConta": 1,
-      "valor": 12,
+      "valor": 2,
       "id": 5
     },
     {
       "categoria": "Saúde",
-      "data": "2023-09-14",
-      "descricao": "Olá Mundo",
-      "valor": null,
-      "idConta": 1,
+      "data": "07/10/2023",
+      "descricao": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eget ligula eu lectus lobortis condimentum.",
+      "valor": 50,
+      "idConta": 2,
       "id": 6
     },
     {
-      "categoria": "Pão",
-      "data": "",
-      "descricao": "Olá Mundo",
+      "categoria": "Saúde",
+      "data": "17/03/2023",
+      "descricao": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eget ligula eu lectus lobortis condimentum.",
       "valor": 8000,
-      "idConta": 1,
+      "idConta": 3,
       "id": 7
+    },
+    {
+      "categoria": "Transporte",
+      "data": "18/09/2023",
+      "descricao": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eget ligula eu lectus lobortis condimentum.",
+      "valor": 10,
+      "idConta": 1,
+      "id": 8
+    },
+    {
+      "categoria": "Lazer",
+      "data": "11/09/2023",
+      "descricao": "Non molestiae reiciendis ut facilis debitis id Quis iste qui eaque molestiae eum aliquam dolorum quo officia illo.",
+      "idConta": 1,
+      "valor": 2000,
+      "id": 9
     }
   ]
 }
