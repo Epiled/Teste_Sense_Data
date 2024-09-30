@@ -5,7 +5,10 @@ const lista = document.querySelector('[data-cards-lista]');
 async function criaCard(categoria, data, descricao, valor, id) {
   const card = document.createElement('li');
   card.className = 'card';
+  
   card.dataset.categoria = categoria;
+  card.dataset.valor = valor.toFixed(2);
+
   card.dataset.card = '';
   card.innerHTML = `
     <header class="card__cabeca">
@@ -57,7 +60,7 @@ async function listaCards(conta) {
   } catch (e) {
     lista.innerHTML = `
       <h2 class="mensagem__titulo">
-        Não foi possível carregar os vídeos
+        Não foi possível carregar os cardes
       </h2>
     `
   }

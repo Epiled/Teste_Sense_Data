@@ -7,14 +7,50 @@
   background: #fff;
 }
 
+.filtro__header {
+  padding-bottom: 1rem;
+  margin-bottom: .5rem;
+  border-bottom: .1rem solid gray;
+}
+
 .filtro__txt {
   font-size: 2rem;
+}
+
+.filtro__tipos {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2.5rem;
+}
+
+.filtro__tipo {
+  border-right: .1rem solid gray;
+  padding-right: 2.5rem;
+  min-width: 20rem;
+}
+
+.filtro__label {
+  display: flex;
+  flex-direction: column;
+  gap: .5rem;
+  font-size: 1.4rem;
+}
+
+.filtro__label--ordem {
+  min-width: 9rem;
+  text-align: center;
 }
 
 .filtro__set {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
+  gap: 1rem;
+  width: 100%;
+}
+
+.filtro__setOrdem {
+  display: flex;
   gap: 1rem;
 }
 
@@ -24,4 +60,26 @@
 
 .filtro__categorias {
   padding: 0.5rem;
+  width: 100%;
+  min-height: 3rem;
+}
+
+.filtro__ipt {
+  padding: .5rem;
+  min-height: 3rem;
+}
+
+.filtro__btn {
+  color: #fff;
+  background: #4362ff;
+  border-radius: .5rem;
+  border: 0;
+  padding: 1rem 1.5rem;
+  margin-top: 1.5rem;
+  font-weight: bold;
+}
+
+.filtro__btn:hover {
+  background: #142a9b;
+  cursor: pointer;
 }

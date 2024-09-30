@@ -1,56 +1,171 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login</title>
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Login</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
 
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./src/css/reset.css" />
+    <link rel="stylesheet" href="./src/css/base.css" />
+    <link rel="stylesheet" href="./src/css/corpo.css" />
+    <link rel="stylesheet" href="./src/css/dashboard.css" />
+    <link rel="stylesheet" href="./src/css/cabecalho.css" />
+    <link rel="stylesheet" href="./src/css/filtro.css" />
+    <link rel="stylesheet" href="./src/css/card.css" />
+    <link rel="stylesheet" href="./src/css/tabela.css" />
 
-  <link rel="stylesheet" href="./src/css/reset.css">
-  <link rel="stylesheet" href="./src/css/base.css">
-  <link rel="stylesheet" href="./src/css/corpo.css">
-  <link rel="stylesheet" href="./src/css/dashboard.css">
-  <link rel="stylesheet" href="./src/css/cabecalho.css">
-  <link rel="stylesheet" href="./src/css/filtro.css">
-  <link rel="stylesheet" href="./src/css/card.css">
-</head>
+  </head>
 
-<body class="corpo dashboard">
-  <header class="cabecalho">
-    <div class="cabecalho__topo">
-      <span class="cabecalho__user">Felipe</span>
-      <div class="cabecalho__funcoes">
-        <div class="cabecalho__buscador">
-          <input class="cabecalho__ipt" type="search" placeholder="Busqe por Categoria">
-          <button class="cabecalho__btn">Buscar</button>
+  <body class="corpo dashboard">
+    <header class="cabecalho">
+      <div class="cabecalho__topo">
+        <span class="cabecalho__user">Felipe</span>
+        <div class="cabecalho__funcoes">
+          <div class="cabecalho__buscador">
+            <input
+              class="cabecalho__ipt"
+              type="search"
+              placeholder="Busqe por Categoria"
+            />
+            <button class="cabecalho__btn">Buscar</button>
+          </div>
+          <a
+            class="cabecalho__btn cabecalho__btn--adicionar"
+            href="adicionarConta.html"
+            >Adicona Conta</a
+          >
         </div>
-        <a class="cabecalho__btn cabecalho__btn--adicionar" href="adicionarConta.html">Adicona Conta</a>
       </div>
-    </div>
-    <div class="filtro">
-      <span class="filtro__txt">Filtro:</span>
-      <fieldset class="filtro__set">
-        <label class="filtro__categoria" for="categorias">
-          Categorias:
-        </label>
-        <select class="filtro__categorias" data-filtro-categorias name="categorias" id="categorias">
-          <option value="Transporte" selected>Todos</option>
-          <option value="Saúde">Saúde</option>
-          <option value="Lazer">Lazer</option>
-          <option value="Transporte">Transporte</option>
-        </select>
-      </fieldset>
 
-    </div>
-  </header>
-  <main data-cards-lista class="dashboard__principal">
-  </main>
-  <script src="./src/app/mostraCards.js" type="module"></script>
-  <!-- <script src="./src/app/filtrarCategorias.js"></script> -->
-</body>
+      <div class="filtro">
+        <header class="filtro__header">
+          <h2 class="filtro__txt">Filtros:</h2>
+        </header>
+        <div class="filtro__tipos">
+          <div class="filtro__tipo">
+            <fieldset class="filtro__set">
+              <label class="filtro__categoria" for="categorias">
+                Categorias:
+              </label>
+              <select
+                class="filtro__categorias"
+                data-filtro-categorias
+                name="categorias"
+                id="categorias"
+              >
+                <option value="Todos" selected>Todos</option>
+                <option value="Saúde">Saúde</option>
+                <option value="Lazer">Lazer</option>
+                <option value="Transporte">Transporte</option>
+              </select>
+            </fieldset>
+          </div>
 
+          <div class="filtro__tipo">
+            <fieldset class="filtro__set">
+              <label class="filtro__categoria" for="categorias"> Valor: </label>
+              <label class="filtro__label" for="iptMin">
+                Min:
+                <input
+                  class="filtro__ipt"
+                  id="iptMin"
+                  data-filtro-min
+                  type="text"
+                />
+              </label>
+              <label class="filtro__label" for="iptMax">
+                Max:
+                <input
+                  class="filtro__ipt"
+                  id="iptMax"
+                  data-filtro-max
+                  type="text"
+                />
+              </label>
+            </fieldset>
+            <button class="filtro__btn" data-btn-filtro-valor>Filtar</button>
+          </div>
+
+          <div class="filtro__tipo">
+            <fieldset class="filtro__set">
+              <label class="filtro__categoria"> Ordenação: </label>
+
+              <fieldset class="filtro__set">
+                <label class="filtro__label" for="tipo"> Tipo: </label>
+                <select
+                  class="filtro__categorias"
+                  data-filtro-tipo
+                  name="tipo"
+                  id="tipo"
+                >
+                  <option value="" disabled selected></option>
+                  <option value="Categoria">Categoria</option>
+                  <option value="Valores">Valores</option>
+                </select>
+              </fieldset>
+
+              <fieldset class="filtro__set">
+                <label class="filtro__label" for="ordem"> Ordem: </label>
+                <select
+                  class="filtro__categorias"
+                  data-filtro-ordem
+                  name="ordem"
+                  id="ordem"
+                >
+                  <option value="" disabled selected></option>
+                  <option value="Crescente">Crescente</option>
+                  <option value="Decrescente">Decrescente</option>
+                </select>
+              </fieldset>
+            </fieldset>
+          </div>
+        </div>
+      </div>
+
+      <!-- <article class="tabela" data-container-tabela>
+        <header  class="tabela__header">
+          <h2 class="tabela__txt">Resumo da conta:</h2>
+        </header>
+        <table class="tabela__txt" >
+          <tr>
+              <th>Categorias</th>
+              <td>Contagem de Itens</td>
+              <td>Valor Total</td>
+          </tr>
+          <tr>
+              <th>Saúde</th>
+              <td>5</td>
+              <td>6</td>
+          </tr>
+          <tr>
+              <th>Lazer</th>
+              <td>8</td>
+              <td>9</td>
+          </tr>
+          <tr>
+              <th>Transporte</th>
+              <td>11</td>
+              <td>12</td>
+          </tr>
+          <tr>
+            <th>Todos</th>
+            <td>11</td>
+            <td>12</td>
+        </tr>
+      </table>
+      </article> -->
+    </header>
+    <main data-cards-lista class="dashboard__principal"></main>
+    <script src="./src/app/mostraCards.js" type="module"></script>
+    <!-- <script src="./src/app/resumoConta.js" type="module"></script> -->
+
+    <script src="./src/app/filtro.js"></script>
+  </body>
 </html>
